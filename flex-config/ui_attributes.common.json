@@ -24,7 +24,7 @@
     },
     "features": {
       "activity_skill_filter": {
-        "enabled": true,
+        "enabled": false,
         "rules": {
           "On a Task": {
             "required_skill": "system_activities",
@@ -54,17 +54,17 @@
         "filter_teams_view": true
       },
       "callback_and_voicemail": {
-        "enabled": true,
+        "enabled": false,
         "allow_requeue": true,
         "max_attempts": 3,
         "auto_select_task": true
       },
       "caller_id": {
-        "enabled": true,
+        "enabled": false,
         "include_outgoing_only_numbers": true
       },
       "conversation_transfer": {
-        "enabled": true,
+        "enabled": false,
         "cold_transfer": true,
         "multi_participant": true
       },
@@ -76,7 +76,7 @@
         "hold_workaround": false
       },
       "enhanced_crm_container": {
-        "enabled": true,
+        "enabled": false,
         "url": "{{serverless.url}}/features/enhanced-crm-container/index.html?line1={{task.from}}&line2={{task.direction}}",
         "should_display_url_when_no_tasks": true,
         "display_url_when_no_tasks": "{{serverless.url}}/features/enhanced-crm-container/index.html",
@@ -120,7 +120,7 @@
         "indicator_permanent": true
       },
       "activity_reservation_handler": {
-        "enabled": false,
+        "enabled": true,
         "system_activity_names": {
           "available": "Available",
           "onATask": "On a Task",
@@ -144,10 +144,10 @@
         }
       },
       "supervisor_capacity": {
-        "enabled": true
+        "enabled": false
       },
       "schedule_manager": {
-        "enabled": true,
+        "enabled": false,
         "serverless_domain": "<YOUR_SCHEDULE_MANAGER_DOMAIN>"
       },
       "multi_call": {
@@ -193,26 +193,26 @@
         "outcome": "Completed by supervisor"
       },
       "canned_responses": {
-        "enabled": true,
+        "enabled": false,
         "location": "MessageInputActions"
       },
       "keyboard_shortcuts": {
-        "enabled": true
+        "enabled": false
       },
       "custom_hold_music": {
-        "enabled": false,
+        "enabled": true,
         "url": ""
       },
       "custom_transfer_directory": {
-        "enabled": true,
+        "enabled": false,
         "max_items": 200,
         "worker": {
-          "enabled": true,
+          "enabled": false,
           "show_only_available_workers": false,
           "max_taskrouter_workers": 15000
         },
         "queue": {
-          "enabled": true,
+          "enabled": false,
           "show_only_queues_with_available_workers": false,
           "show_real_time_data": true,
           "enforce_queue_filter_from_worker_object": true,
@@ -220,12 +220,12 @@
           "global_exclude_filter": ""
         },
         "external_directory": {
-          "enabled": true,
+          "enabled": false,
           "skipPhoneNumberValidation": false
         }
       },
       "dispositions": {
-        "enabled": true,
+        "enabled": false,
         "enable_notes": true,
         "global": {
           "require_disposition": false,
@@ -252,14 +252,14 @@
         }
       },
       "emoji_picker": {
-        "enabled": true
+        "enabled": false
       },
       "attribute_viewer": {
-        "enabled": true,
+        "enabled": false,
         "enabled_for_agents": false
       },
       "admin_ui": {
-        "enabled": true,
+        "enabled": false,
         "enable_audit_logging": true
       },
       "localization": {
@@ -267,11 +267,11 @@
         "show_menu": true
       },
       "park_interaction": {
-        "enabled": true,
+        "enabled": false,
         "show_list": false
       },
       "teams_view_enhancements": {
-        "enabled": true,
+        "enabled": false,
         "highlight_handle_time": true,
         "handle_time_warning_threshold": 180,
         "handle_time_exceeded_threshold": 300,
@@ -286,7 +286,7 @@
         "enabled": false
       },
       "send_audio_rec_file": {
-        "enabled": true
+        "enabled": false
       },
       "metrics_data_tiles": {
         "enabled": false,
@@ -363,7 +363,7 @@
         }
       },
       "queues_stats_metrics": {
-        "enabled": false,
+        "enabled": true,
         "assigned_tasks_column": true,
         "wrapping_tasks_column": true,
         "agent_activity_stats_column": true
@@ -372,14 +372,14 @@
         "enabled": false
       },
       "worker_details": {
-        "enabled": true,
+        "enabled": false,
         "edit_team": true,
         "edit_department": true,
         "text_attributes": [],
         "boolean_attributes": []
       },
       "worker_canvas_tabs": {
-        "enabled": true
+        "enabled": false
       },
       "datadog_log_integration": {
         "enabled": false,
@@ -389,7 +389,7 @@
         "flush_timeout": 5000
       },
       "contacts": {
-        "enabled": true,
+        "enabled": false,
         "enable_recents": true,
         "enable_personal": true,
         "enable_shared": true,
